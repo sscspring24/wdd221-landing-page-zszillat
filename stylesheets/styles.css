@@ -1,0 +1,204 @@
+/* COLOR SCHEME */
+/* https://coolors.co/2d3142-4f5d75-bfc0c0-ffffff-ef8354 */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+body {
+    background: radial-gradient(circle, #4F5D75, #455166);
+    min-width: 900px;
+}
+
+.website-body {
+    width: 90%;
+    background-color: rgb(251, 251, 251);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* HEADER */
+
+header {
+    padding: 10px;
+    height: 300px;
+    background-color: #707d94;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 4fr 1fr;
+}
+
+/* Stark State Logo */
+header .starkstate {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+header .starkstate img {
+    height: 60px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+header .starkstate img:hover {
+    transform: translateY(-5px);
+}
+
+/* Class Title */
+header .title {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header .title h1 {
+    text-align: center;
+    font-style: normal;
+    font-size: 100px;
+    color: #ebebeb;
+}
+
+header .title p {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px;
+    font-style: italic;
+}
+
+/* Social Media Icons */
+header .social-media {
+    grid-row: 1;
+    grid-column: 3;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+}
+
+header .social-media img {
+    width: 35px;
+    margin: 5px;
+    transition: opacity 0.5s ease, transform 0.3s ease;
+}
+
+header .social-media img:hover {
+    transform: translateY(-5px);
+}
+
+/* JavaScript Logo */
+header .javascript {
+    grid-row: 2;
+    grid-column: 1;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-3px) rotate(-3deg); }
+    50% { transform: translateX(3px) rotate(3deg); }
+    75% { transform: translateX(-3px) rotate(-3deg); }
+    100% { transform: translateX(0); }
+  }
+
+header .javascript img {
+    width: 130px;
+}
+
+header .javascript img:hover {
+    animation: shake 0.3s ease-in-out;
+}
+
+
+
+header span {
+    color: rgb(204, 204, 255);
+}
+  
+
+/* https://www.w3schools.com/css/css_navbar_horizontal.asp */
+/* NAVBAR */
+
+nav {
+    width: 100%;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2D3142;
+}
+  
+nav li {
+    float: left;
+}
+  
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+
+nav li a:hover {
+    background-color: #111;
+}
+
+/* MAIN */
+
+main {
+    min-height: 700px;
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    height: 250px;
+    background-color: rgb(221, 221, 221);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box1 {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1 img {
+    width: 60%;
+}
+
+@media (max-width: 1000px) {
+    header .social-media img {
+        display: none;
+    }
+}
+  
+@media (min-width: 1200px) {
+    header .social-media img {
+        width: 45px
+}
+  
+}
+
+@media (min-width: 1500px) {
+
+    header .social-media img {
+    width: 60px
+}
+
+}
