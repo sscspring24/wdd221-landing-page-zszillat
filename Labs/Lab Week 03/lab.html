@@ -14,7 +14,7 @@
         <!-- Source -->
         <!-- https://icons8.com/icon/VFaz7MkjAiu0/done -->
         <link rel="icon" href="favicon.png" type="image/x-icon">
-        <link rel="stylesheet" href="stylesheets/styles.css">
+        <link rel="stylesheet" href="../../stylesheets/styles.css">
 
         <!-- Meta Tags -->
         <meta charset="UTF-8">
@@ -22,13 +22,44 @@
 
         <title>Zac Szillat | WDD221</title>
 
+        <style>
+            .dog-years {
+                background-color: rgb(34, 43, 59);
+                margin: 50px;
+                padding: 25px;
+                color: white;
+                width: 100px;
+                display: flex;
+                flex-direction: column;
+
+            }
+
+            .dog-years label {
+                color: white;
+                margin: 5px;
+            }
+
+            .dog-years input {
+                width: 80%;
+            }
+
+            .dog-years p {
+                color: white;
+                margin: 5px;
+            }
+
+            .dog-years button {
+                margin: 5px;
+            }
+        </style>
+
     </head>
 
     <body>
         <div class="website-body">
             <header>
                 <div class="starkstate">
-                    <a href="https://www.starkstate.edu/"><img src="images/starkstate.png" alt="Stark State College Logo"></a>
+                    <a href="https://www.starkstate.edu/"><img src="../../images/starkstate.png" alt="Stark State College Logo"></a>
                 </div>
                 <div class="title">
                     <h1>WDD221</h1>
@@ -37,14 +68,14 @@
                 <div class="javascript">
                     <!-- SOURCE -->
                     <!-- https://github.com/voodootikigod/logo.js -->
-                    <img src="images/javascript.png" alt="">
+                    <img src="../../images/javascript.png" alt="">
                 </div>
                 <div class="social-media">
                     <!-- SOURCES -->
                     <!-- https://www.flaticon.com/free-icon-->
-                    <a href="https://www.linkedin.com/in/zachary-szillat-579000176/"><img src="images/LinkedIn.png" alt="LinkedIn Logo"></a>
-                    <a href=""><img src="images/Instagram.png" alt="Instagram Logo" id="instagramLogo"></a>
-                    <a href=""><img src="images/youtube.png" id="youtubeLogo" alt="Youtube Logo"></a>
+                    <a href="https://www.linkedin.com/in/zachary-szillat-579000176/"><img src="../../images/LinkedIn.png" alt="LinkedIn Logo"></a>
+                    <a href=""><img src="../../images/Instagram.png" alt="Instagram Logo" id="instagramLogo"></a>
+                    <a href=""><img src="../../images/youtube.png" id="youtubeLogo" alt="Youtube Logo"></a>
                 </div>
             </header>
 
@@ -58,17 +89,22 @@
             </nav>
 
             <main>
-                <h1>Assignments</h1>
-                <ul>
-                    <li><a href="Labs/Lab Week 02/plants.html">Lab Week 2</a></li>
-                </ul>
+                <div class="dog-years">
+                    <label>My Name</label>
+                    <input id="myName" type="text">
+                    <label>My Age</label>
+                    <input id="myAge" type="text">
+                    <p id="answer"></p>
+                    <button id="dogYearsButton" >Calculate</button>
+                </div>
             </main>
 
             <footer>
-                <div class="box1"><img src="images/starkstatelong.png" alt="Stark State College Logo"></div>
+                <div class="box1"><img src="../../images/starkstatelong.png" alt="Stark State College Logo"></div>
             </footer>
         </div>
-            <script src="scripts/index.js"></script>
+            <script src="../../scripts/index.js"></script>
+            <script src="dogYearsStartFile.js"></script>
     </body>
 
 </html>
